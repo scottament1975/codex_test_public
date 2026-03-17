@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup Quest</title>
+    <meta
+      name="description"
+      content="Browse World Cup 2026 teams and test your knowledge with mobile-friendly soccer trivia."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">World Cup 2026 Trivia</p>
+          <h1>World Cup Quest</h1>
+          <p class="hero__lede">
+            Pick a qualified nation, answer team-specific trivia, and build your
+            matchday streak across the tournament field.
+          </p>
+        </div>
+        <div class="hero__scoreboard" id="summary-cards" aria-live="polite"></div>
+      </header>
+
+      <main class="layout">
+        <section class="dashboard-panel">
+          <div class="section-header">
+            <div>
+              <p class="section-header__eyebrow">Dashboard</p>
+              <h2>Teams and tournament slots</h2>
+            </div>
+            <p class="section-header__note">
+              The six play-off slots stay visible until the final qualifiers are
+              confirmed.
+            </p>
+          </div>
+          <div id="dashboard" class="dashboard" aria-live="polite"></div>
+        </section>
+
+        <aside class="quiz-panel" id="quiz-panel" aria-live="polite">
+          <div class="quiz-panel__empty">
+            <p class="section-header__eyebrow">Trivia Arena</p>
+            <h2>Select a team</h2>
+            <p>
+              Choose a card from the dashboard to start a five-question round.
+            </p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
